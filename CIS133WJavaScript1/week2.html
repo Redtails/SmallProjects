@@ -1,0 +1,428 @@
+// author (Najeb Johnson)
+// date Oct 14, 2022 6:58 PM 
+<style>
+  table, th, td {
+    border: 1px solid black;
+  }
+</style>
+<html>
+  <div>
+    <script>
+      document.write("This is my week 2 assignment.")
+    </script>
+  </div>
+  <table>
+    <tr>
+      <th>Value</th>
+      <th>Type</th>
+    </tr>
+    <tr>
+      <td>" "</td>
+      <td><script>document.write(typeof "")</script></td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td><script>document.write(typeof 0)</script></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><script>document.write(typeof 1)</script></td>
+    </tr>
+    <tr>
+      <td>"0"</td>
+      <td><script>document.write(typeof "0")</script></td>
+    </tr>
+    <tr>
+      <td>"1"</td>
+      <td><script>document.write(typeof "1")</script></td>
+    </tr>
+    <tr>
+      <td>[]</td>
+      <td><script>document.write(typeof [])</script></td>
+    </tr>
+    <tr>
+      <td>{}</td>
+      <td><script>document.write(typeof {})</script></td>
+    </tr>
+    <tr>
+      <td>null</td>
+      <td><script>document.write(typeof null)</script></td>
+    </tr>
+    <tr>
+      <td>undefined</td>
+      <td><script>document.write(typeof undefined)</script></td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td><script>document.write(typeof NaN)</script></td>
+    </tr>
+    <tr>
+      <td>Infinity</td>
+      <td><script>document.write(typeof Infinity)</script></td>
+    </tr>
+    <tr>
+      <td>console</td>
+      <td><script>document.write(typeof console)</script></td>
+    </tr>
+    <tr>
+      <td>console.log</td>
+      <td><script>document.write(typeof console.log)</script></td>
+    </tr>
+    <tr>
+      <td>document</td>
+      <td><script>document.write(typeof document)</script></td>
+    </tr>
+    <tr>
+      <td>document.write</td>
+      <td><script>document.write(typeof document.write)</script></td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td><script>document.write(typeof "true")</script></td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td><script>document.write(typeof "false")</script></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th>
+        Operation
+      </th>
+      <th>
+        Result
+      </th>
+    </tr>
+    <tr>
+      <td>"2" + "5" =</td>
+      <td><script>document.write("2" + "5")</script></td>
+    </tr>
+    <tr>
+      <td>"2" + 5 =</td>
+      <td><script>document.write("2" + 5)</script></td>
+    </tr>
+    <tr>
+      <td>"2" * "5" =</td>
+      <td><script>document.write("2" * "5")</script></td>
+    </tr>
+    <tr>
+      <td>"2" * 5 =</td>
+      <td><script>document.write("2" * 5)</script></td>
+    </tr>
+    <tr>
+      <td>"2" / "5" =</td>
+      <td><script>document.write("2" / "5")</script></td>
+    </tr>
+    <tr>
+      <td>"2" / 5 =</td>
+      <td><script>document.write("2" / 5)</script></td>
+    </tr>
+    <tr>
+      <td>"2" - "5" =</td>
+      <td><script>document.write("2" - "5")</script></td>
+    </tr>
+    <tr>
+      <td>"2" - 5 =</td>
+      <td><script>document.write("2" - 5)</script></td>
+    </tr>
+    <tr>
+      <td>"5" % "2" =</td>
+      <td><script>document.write("5" % "2")</script></td>
+    </tr>
+    <tr>
+      <td>"5" % 2 =</td>
+      <td><script>document.write("5" % 2)</script></td>
+    </tr>
+
+  </table>
+  <table>
+    <th> 
+      Order of Operations
+    </th>
+    <th>
+      Result
+    </th>
+    <tr>
+      <td>10 + 5 % 2 =</td>
+      <td><script>document.write(10 + 5 % 2)</script></td>
+    </tr>
+    <tr>
+      <td>(10 + 5) % 2 =</td>
+      <td><script>document.write((10 + 5) % 2)</script></td>
+    </tr>
+    <tr>
+      <td>10 + 5 % 2 =</td>
+      <td><script>document.write(10 + 5 % 2)</script></td>
+    </tr>
+    <tr>
+      <td>10 + (5 % 2) =</td>
+      <td><script>document.write(10 + (5 % 2))</script></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th>
+        Conditional (Ternary)
+      </th>
+      <th>
+        Result
+      </th>
+    </tr>
+    <tr>
+      <td>0 == 1 ? "fish" : "duck"</td>
+      <td><script>document.write(0 == 1 ? "fish" : "duck")</script></td>
+    </tr>
+    <tr>
+      <td>(0 == 1) ? "fish" : "duck"</td>
+      <td><script>document.write((0 == 1) ? "fish" : "duck")</script></td>
+    </tr>
+    <tr>
+      <td>0 == (1 ? "fish" : "duck")</td>
+      <td><script>document.write(0 == (1 ? "fish" : "duck"))</script></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th>
+        Value
+      </th>
+      <th>
+        Truthy/Falsy
+      </th>
+      <tr>
+        <td>0</td>
+        <td>
+          <script>
+            if(0){
+              document.write('0 is Truthy.');
+            } 
+            else{
+              document.write('0 is Falsy')
+            }
+            </script>
+        </td>
+        <tr>
+          <td>1</td>
+          <td>
+            <script>
+              if(1){
+                document.write('1 is Truthy.');
+              } 
+              else{
+                document.write('1 is Falsy')
+              }
+              </script>
+          </td>
+          <tr>
+            <td>2</td>
+            <td>
+              <script>
+                if(2){
+                  document.write('2 is Truthy.');
+                } 
+                else{
+                  document.write('2 is Falsy')
+                }
+                </script>
+          </td>
+          <tr>
+            <td>"0"</td>
+            <td>
+              <script>
+                if("0"){
+                  document.write('"0" is Truthy.');
+                } 
+                else{
+                  document.write('"0" is Falsy')
+                }
+                </script>
+          </td>
+          <tr>
+            <td>"1"</td>
+            <td>
+              <script>
+                if("1"){
+                  document.write('"1" is Truthy.');
+                } 
+                else{
+                  document.write('"1" is Falsy')
+                }
+                </script>
+          </td>
+          <tr>
+            <td>"2"</td>
+            <td>
+              <script>
+                if("2"){
+                  document.write('"2" is Truthy.');
+                } 
+                else{
+                  document.write('"2" is Falsy')
+                }
+                </script>
+          </td>
+          <tr>
+            <td>"cow"</td>
+            <td>
+              <script>
+                if("cow"){
+                  document.write('"cow" is Truthy.');
+                } 
+                else{
+                  document.write('"cow" is Falsy')
+                }
+                </script>
+          </td>
+          <tr>
+            <td>""</td>
+            <td>
+              <script>
+                if(""){
+                  document.write('"" is Truthy.');
+                } 
+                else{
+                  document.write('"" is Falsy')
+                }
+                </script>
+          </td>
+          <tr>
+            <td>null</td>
+            <td>
+              <script>
+                if(null){
+                  document.write('null is Truthy.');
+                } 
+                else{
+                  document.write('null is Falsy')
+                }
+                </script>
+          </td>
+          <tr>
+            <td>undefined</td>
+            <td>
+              <script>
+                if(undefined){
+                  document.write('undefined is Truthy.');
+                } 
+                else{
+                  document.write('undefined is Falsy')
+                }
+                </script>
+          </td>
+          <tr>
+            <td>NaN</td>
+            <td>
+              <script>
+                if(NaN){
+                  document.write('NaN is Truthy.');
+                } 
+                else{
+                  document.write('NaN is Falsy')
+                }
+                </script>
+          </td>
+          <tr>
+            <td>Infinity</td>
+            <td>
+              <script>
+                if(Infinity){
+                  document.write('Infinity is Truthy.');
+                } 
+                else{
+                  document.write('Infinity is Falsy')
+                }
+                </script>
+          </td>
+          <tr>
+            <td>[]</td>
+            <td>
+              <script>
+                if([]){
+                  document.write('[] is Truthy.');
+                } 
+                else{
+                  document.write('[] is Falsy')
+                }
+                </script>
+          </td>
+          <tr>
+            <td>[0]</td>
+            <td>
+              <script>
+                if([0]){
+                  document.write('[0] is Truthy.');
+                } 
+                else{
+                  document.write('[0] is Falsy')
+                }
+                </script>
+          </td>
+          <tr>
+            <td>{}</td>
+            <td>
+              <script>
+                if({}){
+                  document.write('{} is Truthy.');
+                } 
+                else{
+                  document.write('{} is Falsy')
+                }
+                </script>
+          </td>
+          <tr>
+            <td>{vegetable:"cabbage"}</td>
+            <td>
+              <script>
+                if({vegetable:"cabbage"}){
+                  document.write('{vegetable:"cabbage"} is Truthy.');
+                } 
+                else{
+                  document.write('{vegetable:"cabbage"} is Falsy')
+                }
+                </script>
+          </td>
+          
+      </tr>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th>
+        Short Circuit Evaluation 
+      </th>
+      <th>
+        Result
+      </th>
+      <tr>
+        <tr>
+          <td>"dog" || "cat" || "cow"</td>
+          <td>
+            <script>
+              if("dog" || "cat" || "cow"){
+                document.write('Truthy.');
+              } 
+              else{
+                document.write('Falsy')
+              }
+              </script>
+          </td>
+       </tr>
+       <tr>
+        <tr>
+          <td>"dog" && "cat" && "cow"</td>
+          <td>
+            <script>
+              if("dog" && "cat" && "cow"){
+                document.write('Truthy.');
+              } 
+              else{
+                document.write('Falsy')
+              }
+              </script>
+          </td>
+       </tr>
+      
+  </table>
+
+</html>

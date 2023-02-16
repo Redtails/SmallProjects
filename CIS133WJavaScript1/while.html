@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Control Structures/If statement</title>
+    <script>
+      function changeChooser(){
+        console.log("We changed!");
+        var chooser = document.getElementById("animalChooser");
+        var options = chooser.options;
+        var counter = 0;
+
+        while (counter < options.length) {
+          if (options[counter].selected) {
+            document.getElementById(options[counter].value).style.display = "";
+          } else {
+            document.getElementById(options[counter].value).style.display = "none";
+          }
+          counter += 1;
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+    <h1>The if statement</h1>
+    <select id="animalChooser" onchange="changeChooser();">
+      <option value="contentpuppy">puppy</option>
+      <option value="contentpiggie">Piggie</option>
+      <option value="contentpanda">Panda</option>
+      <option value="contentfox">Fox</option>
+    </select> 
+    <div id="contentpuppy">
+      <img src="images_folder/puppy.jpeg">
+    </div>
+    <div id="contentpiggie">
+      <img src="images_folder/babypig.jpeg">
+    </div>
+    <div id="contentpanda">
+      <img src="images_folder/babypanda.jpeg">
+    </div>
+    <div id="contentfox">
+      <img src="images_folder/babyfox.jpeg">
+    </div>
+  </body>
+</html>

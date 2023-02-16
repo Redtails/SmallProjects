@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="test"></p>
+<p>"Volvo, BMW, Dodge"</p>
+<p>Car Company Descriptor, Type a company name exactly as shown above to get a brief description</p>
+
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">Push me for description</button>
+
+<p id="demo"></p>
+
+<script>
+  var click = 0
+function myFunction() {
+  click += 1;
+  var text;
+  var cars = document.getElementById("myInput").value;
+
+  while(click = 3){
+    document.getElementById('test').innerHTML = 'Hello World';
+  }
+  
+  switch(cars) {
+    case "Volvo":
+      text = "Volvo has developed from a small local industry to one of the leading suppliers of commercial transport and infrastructure solutions providing products such as trucks, buses, construction equipment, and drive systems for marine and industrial applications.";
+    break;
+    case "BMW":
+    text = "The acronym BMW stands for Bayerische Motoren Werke GmbH, which roughly translates to the Bavarian Engine Works Company. The name harks back to the company’s origin in the German state of Bavaria. It also indicates BMW's original product range: engines for various applications.";
+    break;
+    case "Dodge":
+    text = "Dodge is an American brand of automobiles and a division of Stellantis, based in Auburn Hills, Michigan. Dodge vehicles have historically included performance cars, and for much of its existence Dodge was Chrysler's mid-priced brand above Plymouth.";
+    break;
+    default:
+    text = "I have never heard of that car company before...";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

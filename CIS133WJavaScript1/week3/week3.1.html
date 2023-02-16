@@ -1,0 +1,66 @@
+// author (Najeb Johnson)
+// date Oct 14, 2022 6:58 PM 
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .carStyle{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        width: 500px;
+        height: 800px;
+      }
+      .colorChange{
+        height: 18px;
+        width: 100px;
+        border: 1px solid black;
+        background-color: white;
+      }
+    </style>
+    <title>Car Choice</title>
+  </head>
+  <body onload="changeChooser()">
+    <select id="carChoice" onchange="changeChooser();">
+      <option value="contentHonda">Honda</option>
+      <option value="contentFord">Ford</option>
+      <option value="contentFerrari">Ferrari</option>
+      <option value="contentToyota">Toyota</option>
+    </select>
+    <button class="colorChange" id="colorChanger" onclick="changeColor();">Random Color Btn</button> 
+    <div id="contentHonda" class="carStyle">
+      <h1>Honda</h1>
+      <img src="cars/honda.jpeg" width="300" height="300">
+      <p>
+        Honda Motor Co., Ltd. is established with co-founders Soichiro Honda and Takeo Fujisawa and introduces (in 1949) its first original designed and engineered product which Mr. Honda appropriately names the “Dream” D-type motorcycle.
+      </p>
+    </div>
+    <div id="contentFord" class="carStyle">
+      <h1>Ford</h1>
+      <img src="cars/ford.jpeg" width="300" height="300">
+      <p>
+        Henry Ford built his first experimental car in a workshop behind his home in Detroit in 1896. After formation of the Ford Motor Company, the first Ford car, the original Model A, was assembled at the Mack Avenue plant in July 1903. Five years later, in 1908, the highly successful Model T was introduced.
+      </p>
+    </div>
+    <div id="contentFerrari" class="carStyle">
+      <h1>Ferrari</h1>
+      <img src="cars/Ferrari.jpeg" width="300" height="300">
+      <p>
+        Born in Modena, Italy in 1898, Enzo Ferrari started out as a race car driver. In the 1920s, he was made a driver with Alfa Romeo and won several racing awards including the 2nd Circuito di Modena. In 1929, Ferrari founded the Scuderia Ferrari, now the official race car division for Ferrari.
+      </p>
+    </div>
+    <div id="contentToyota" class="carStyle">
+      <h1>Toyota</h1>
+      <img src="cars/toyota.jpeg" width="300" height="300">
+      <p>
+        The history of Toyota started in 1933 with the company being a division of Toyoda Automatic Loom Works devoted to the production of cars under the direction of the founder's son, Kiichiro Toyoda.[1] Kiichiro Toyoda had traveled to Europe and the United States in 1929 to investigate automobile production and had begun researching gasoline-powered engines in 1930. Toyoda Automatic Loom Works was encouraged to develop automobile production by the Japanese government, which needed domestic vehicle production, due to the war with China.[2] Kiichiro Toyoda seized this opportunity to establish the Automotive Production Division on September 1, 1933, and began preparing to build prototype vehicles. In 1934, the division produced its first Type A Engine, which was used in the first Model A1 passenger car in May 1935 and the G1 truck in August 1935. Production of the Model AA passenger car started in 1936. Early vehicles bear a striking resemblance to the Dodge Power Wagon and 1930's Chevrolet, with some parts actually interchanging with their American originals.[2]
+      </p>
+    </div>
+  </body>
+  <script type="text/javascript" src="week4.js">
+  </script>
+    
+</html>

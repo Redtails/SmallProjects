@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    Input Number : <input id="numberinput" onkeypress="return event.charCode >= 48 && event.charCode <= 57" />
+
+<button id="btn" onclick="doAction()">
+Send
+</button>
+
+<script>
+var doAction = function () {
+    var input = document.getElementById('numberinput');
+    var times = parseint(input.value);
+
+    for(var i = 0; i < times; i++) {
+      //do whatever you need to do
+    }
+}
+</script>
+  </head>
+  <body>
+    <h1>
+      This is my week one document!
+    </h1>
+    <p>
+       Don't mind me just trying to learn as much as <br> I can in the shortest amount of time
+    </p>
+    <br>
+    <h2>
+      Just learning some more don't mind me
+    </h2>
+  </body>
+</html>
